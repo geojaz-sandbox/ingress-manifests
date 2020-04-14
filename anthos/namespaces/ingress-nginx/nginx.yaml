@@ -12,6 +12,7 @@ metadata:
 spec:
   externalTrafficPolicy: Local
   type: LoadBalancer
+  # Note: this Ip was allocated in terraform
   loadBalancerIP: "10.2.4.102"
   selector:
     app.kubernetes.io/name: ingress-nginx
